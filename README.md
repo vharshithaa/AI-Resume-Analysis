@@ -1,80 +1,63 @@
-# 🧠 AI-Powered Resume Analyzer
+# AI-Powered Resume Analyzer  
 
-The **AI-Powered Resume Analyzer** is a cutting-edge application designed to mimic the expertise of an HR professional. This tool leverages the power of **Google Generative AI (Gemini)** to analyze resumes, evaluate job compatibility, and provide actionable insights for career enhancement.
-
----
-
-## 📌 Project Overview
-
-The AI-Powered Resume Analyzer acts as your **virtual HR assistant**, offering:
-
-- ✔️ Detailed resume evaluation  
-- ✔️ Strength and weakness analysis  
-- ✔️ Skill gap identification  
-- ✔️ Recommended skill courses  
-- ✔️ Job–resume compatibility scoring  
-- ✔️ HR-style feedback and improvement insights  
-
-Whether you're a job seeker trying to upgrade your resume or a recruiter looking to evaluate candidates efficiently, this tool simplifies and enhances the resume assessment process.
+**AI-Powered Resume Analyzer**, a cutting-edge application designed to mimic the expertise of an HR professional! This tool leverages the power of **Google Generative AI** to analyze resumes, evaluate job compatibility, and offer actionable insights for career enhancement.  
 
 ---
 
-## ✨ Features
+##  **Project Overview**  
 
-### 🔍 General Resume Analysis
-- One-line professional resume summary  
-- Extracted and categorized skill sets  
-- Identification of missing or weak skill areas  
-- Actionable suggestions for improvement  
-- Personalized course recommendations  
-- HR-style strengths and weaknesses breakdown  
+The **AI-Powered Resume Analyzer** serves as a virtual HR assistant, providing:  
+- Detailed resume evaluation, including strengths and weaknesses.  
+- Suggestions for skill improvement and recommended courses.  
+- Job-specific resume analysis to measure compatibility and alignment with job descriptions.  
 
-### 🎯 Resume–Job Description Matching
-- Job-specific resume evaluation  
-- Compatibility score (percentage-based)  
-- Highlighting of missing skills required for the job  
-- Suggestions to improve job readiness  
-- Final verdict: *"Resume Ready"* or *"Needs Improvement"*  
+Whether you’re a job seeker or a recruiter, this tool simplifies resume assessment and improvement.  
 
 ---
 
-## 🛠️ Tech Stack
+##  **Features**  
 
-| Component | Technology |
-|----------|------------|
-| **Frontend** | Streamlit |
-| **Backend** | Python |
-| **AI Model** | Google Generative AI (Gemini) |
-| **PDF Parsing** | pdfplumber |
-| **OCR Fallback** | pytesseract |
-| **Environment Config** | `.env` for API key security |
+###  **General Resume Analysis**  
+- Summarizes the resume in one line.  
+- Highlights existing skill sets.  
+- Identifies skill gaps and suggests improvements.  
+- Recommends popular courses to enhance the resume.  
+- Provides a thorough evaluation of strengths and weaknesses.  
+
+###  **Resume Matching with Job Description**  
+- Analyzes resume compatibility with a specific job description.  
+- Provides a match score in percentage.  
+- Highlights missing skills and areas needing improvement.  
+- Suggests whether the resume is ready for the job or requires further enhancements.  
 
 ---
 
-## ⚙️ How It Works
+##  **Tech Stack**  
 
-### 📄 1. Resume Parsing
-- Extracts clean text from PDF using **pdfplumber**  
-- If text extraction fails (image-based PDF), uses **pytesseract OCR**
+| **Component**       | **Technology**                  |  
+|----------------------|----------------------------------|  
+| **Frontend**         | [Streamlit](https://streamlit.io/) |  
+| **Backend**          | Python                          |  
+| **AI Model**         | [Google Generative AI (Gemini)](https://developers.generativeai.google/) |  
+| **PDF Parsing**      | `pdfplumber`                    |  
+| **OCR Fallback**     | `pytesseract`                   |  
+| **Environment Config** | `.env` for API key security    |  
 
-### 🤖 2. AI Analysis
-- Sends extracted text to **Gemini 2.5 Flash / Pro**  
-- Generates detailed feedback:
-  - Summary  
-  - Skill extraction  
-  - Skill gap detection  
-  - Recommended improvements  
-  - Suggested courses  
+---
 
-### 📊 3. Job Description Matching
-- Compares resume skills with job description requirements  
-- Provides:
-  - Match score  
-  - Missing skills  
-  - Improvement suggestions  
+##  **How It Works**
 
-### 🎓 4. Insightful Feedback
-- Offers actionable career-enhancing suggestions  
-- Gives a structured, HR-style evaluation  
-- Helps the candidate understand strengths and growth areas  
+1. **Resume Parsing**  
+   - Extracts text from PDF files using `pdfplumber` or OCR as a fallback.
+
+2. **AI Analysis**  
+   - Utilizes Google Generative AI to summarize and analyze resume content.  
+   - Matches skills with job descriptions for compatibility scoring.
+
+3. **Insightful Feedback**  
+   - Provides actionable suggestions for skill enhancement, including course recommendations.  
+   - Highlights strengths and weaknesses to refine resumes for better opportunities.
+
+---
+
 
